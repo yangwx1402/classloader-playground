@@ -19,7 +19,7 @@ class AppThread extends Thread {
     @Override
     public void run() {
         try {
-            mainMethod.invoke(null, argArray);
+            mainMethod.invoke(null, (Object) argArray);
         } catch (Exception e) {
             throw new IllegalStateException(String.format(
                     "Exception to run app %s, cause: %s", appName, e.getMessage()), e);
