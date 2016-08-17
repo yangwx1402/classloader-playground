@@ -16,5 +16,6 @@ public class Foo {
         System.out.println("args is: " + Arrays.toString(args));
         Foo foo = new Foo();
         System.out.println("new " + foo.toString());
+        System.out.println("yangyong");
     }
 }
